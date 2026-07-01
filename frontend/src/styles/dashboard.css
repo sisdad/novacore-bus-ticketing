@@ -1,0 +1,304 @@
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0f172a;
+}
+
+/* Dark Theme */
+
+.dark-theme {
+    background: #0f172a !important;
+    color: white;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.dashboard-navbar {
+    height: 100px;
+    background: linear-gradient(90deg,#111827,#1e293b,#111827);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,.25);
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.system-logo{
+    width:55px;
+    height:55px;
+    border-radius:12px;
+    object-fit:cover;
+    background:white;
+    padding:4px;
+}
+
+.system-title{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+    color:#fff;
+}
+
+.system-subtitle{
+    color:#94a3b8;
+    letter-spacing:1px;
+    font-size:13px;
+}
+
+/* ===========================
+   CENTER
+=========================== */
+
+.nav-center{
+    text-align:center;
+    flex:1;
+}
+
+.clock-time{
+    margin:0;
+    font-size:28px;
+    color:#38bdf8;
+    font-weight:700;
+}
+
+.clock-date{
+    color:#cbd5e1;
+    font-size:13px;
+}
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* ===========================
+   ICON BUTTONS
+=========================== */
+
+.icon-btn{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1e293b;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.icon-btn:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+
+.notification-dot{
+
+    position:absolute;
+
+    top:10px;
+
+    right:11px;
+
+    width:9px;
+
+    height:9px;
+
+    background:red;
+
+    border-radius:50%;
+
+}
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.profile-toggle{
+
+    border:none !important;
+
+    background:transparent !important;
+
+    color:white !important;
+
+    box-shadow:none !important;
+
+}
+
+.profile-toggle::after{
+
+    display:none !important;
+
+}
+
+.profile-toggle svg{
+
+    transition:.3s;
+
+}
+
+.profile-toggle:hover svg{
+
+    color:#38bdf8;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.profile-menu{
+
+    width:260px;
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    padding:0;
+
+}
+
+.profile-header{
+
+    background:#1e293b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.profile-header h6{
+
+    margin-top:10px;
+
+    margin-bottom:3px;
+
+    font-weight:700;
+
+}
+
+.profile-header small{
+
+    color:#cbd5e1;
+
+}
+
+.dropdown-item{
+
+    padding:12px 20px;
+
+    font-weight:500;
+
+}
+
+.dropdown-item:hover{
+
+    background:#eff6ff;
+
+}
+
+.dropdown-divider{
+
+    margin:0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.dashboard-navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:15px;
+
+}
+
+.nav-left{
+
+    margin-bottom:10px;
+
+}
+
+.nav-center{
+
+    margin-bottom:10px;
+
+}
+
+.clock-time{
+
+    font-size:22px;
+
+}
+
+.system-title{
+
+    font-size:18px;
+
+}
+
+}
